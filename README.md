@@ -1,6 +1,6 @@
 # flutter_ymodem
 
-A new Flutter project.
+support Android/iOS platform
 
 ## Getting Started
 
