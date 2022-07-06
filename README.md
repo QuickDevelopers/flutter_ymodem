@@ -5,6 +5,11 @@ A new Flutter project.
 ## Getting Started
 
 
+The demo contains all the usage methods，Follow up update, pigeon
+
+iOS has been tested.
+
+Android please you try again.
 
 
 #### update july 6 2022
