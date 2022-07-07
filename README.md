@@ -1,6 +1,6 @@
 # flutter_ymodem
 
-support Android/iOS platform
+support Android/iOS/Mac platform
 
 ## Getting Started
 
