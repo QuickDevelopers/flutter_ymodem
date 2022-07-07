@@ -17,7 +17,7 @@ use
 
 define
 
-```aid
+```java
 
 // define
 
@@ -27,7 +27,7 @@ var channel = const MethodChannel('com.flutter.guide.YModemChannel');
 
 send ios/android data
 
-```aidl
+```java
 // send ios/android data
 
 channel.invokeMethod(
@@ -37,7 +37,7 @@ channel.invokeMethod(
 
 receive ios/android data  
 
-```aidl
+```java
 
  receiveCallData(BuildContext context,BleModel model){
     channel.setMethodCallHandler((MethodCall call){
@@ -80,14 +80,14 @@ receive ios/android data
 
 define
 
-```aidl
+```java
 YmodemRequestApi api = YmodemRequestApi();
 
 ```
 
 send data
 
-```aidl
+```java
 YmodemResponse response = YmodemResponse();
 
     response.status = "otaBegin";
@@ -97,7 +97,7 @@ YmodemResponse response = YmodemResponse();
 
 receive data and send data
 
-```aidl
+```java
 
 receiveData(BuildContext context,BleModel model,BluetoothCharacteristic character) async{
 
