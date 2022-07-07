@@ -1,4 +1,4 @@
-package com.example.flutter_ymodel
+package com.rnd.flutter_ymodel
 
 import io.flutter.embedding.android.FlutterActivity
 

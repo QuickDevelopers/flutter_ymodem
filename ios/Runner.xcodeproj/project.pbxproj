@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		BC06398828755C6D00520209 /* YModemUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BC06398528755C6D00520209 /* YModemUtil.m */; };
 		BC06398A28755CBE00520209 /* OperateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC06398928755CBE00520209 /* OperateManager.swift */; };
 		BC06398C28755D3700520209 /* YModemChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC06398B28755D3700520209 /* YModemChannel.swift */; };
+		BCD97E152876C119004208ED /* pigeon.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD97E122876C118004208ED /* pigeon.m */; };
+		BCD97E162876C119004208ED /* Pigeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD97E132876C119004208ED /* Pigeon.swift */; };
+		BCD97E182876C246004208ED /* YModemAPi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD97E172876C246004208ED /* YModemAPi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +60,10 @@
 		BC06398628755C6D00520209 /* YModem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YModem.h; sourceTree = "<group>"; };
 		BC06398928755CBE00520209 /* OperateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperateManager.swift; sourceTree = "<group>"; };
 		BC06398B28755D3700520209 /* YModemChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YModemChannel.swift; sourceTree = "<group>"; };
+		BCD97E122876C118004208ED /* pigeon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pigeon.m; sourceTree = "<group>"; };
+		BCD97E132876C119004208ED /* Pigeon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pigeon.swift; sourceTree = "<group>"; };
+		BCD97E142876C119004208ED /* pigeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pigeon.h; sourceTree = "<group>"; };
+		BCD97E172876C246004208ED /* YModemAPi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YModemAPi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +85,6 @@
 				B367F0A1C40A417D47C1D792 /* Pods-Runner.release.xcconfig */,
 				99993E539C34FA8951E866C6 /* Pods-Runner.profile.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,6 +121,9 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				BCD97E142876C119004208ED /* pigeon.h */,
+				BCD97E122876C118004208ED /* pigeon.m */,
+				BCD97E132876C119004208ED /* Pigeon.swift */,
 				BC06398228755C6D00520209 /* YModem */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
@@ -126,6 +135,7 @@
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 				BC06398928755CBE00520209 /* OperateManager.swift */,
 				BC06398B28755D3700520209 /* YModemChannel.swift */,
+				BCD97E172876C246004208ED /* YModemAPi.swift */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -296,9 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD97E182876C246004208ED /* YModemAPi.swift in Sources */,
 				BC06398828755C6D00520209 /* YModemUtil.m in Sources */,
+				BCD97E162876C119004208ED /* Pigeon.swift in Sources */,
 				BC06398A28755CBE00520209 /* OperateManager.swift in Sources */,
 				BC06398C28755D3700520209 /* YModemChannel.swift in Sources */,
+				BCD97E152876C119004208ED /* pigeon.m in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				BC06398728755C6D00520209 /* YModem.c in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,

@@ -40,6 +40,7 @@ dependencies:
   event_bus: ^2.0.0
   flutter_easyrefresh: ^2.2.1
   dialogs: ^0.0.7
+  pigeon: ^3.2.3
 
 dev_dependencies:
   flutter_test:
