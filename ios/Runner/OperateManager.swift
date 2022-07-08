@@ -26,7 +26,7 @@ class OperateManager: NSObject, YModemUtilDelegate{
     }
     
     
-    func updateOta(fileNames:String,filePaths:String,otaState:String, complete: @escaping (_ args: Any) -> Void) {
+    func updateOta(fileNames:String,filePaths:String,otaState:String, complete: @escaping (_ args: [String: Any]) -> Void) {
         
         if otaState != ""{
             if otaState == OTAC{
@@ -56,7 +56,7 @@ class OperateManager: NSObject, YModemUtilDelegate{
     }
     
     
-    func stopOta(complete: @escaping (_ args: Any) -> Void){
+    func stopOta(complete: @escaping (_ args: [String: Any]) -> Void){
         var arg:[String: Any] = [:]
         self.ymodemUtil?.stopUpgrade{
             current, total, msg, data in

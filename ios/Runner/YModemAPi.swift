@@ -9,6 +9,7 @@ import Foundation
 import Flutter
 
 
+
 class YModemAPi: NSObject, YmodemRequestApi{
     
     // 操作类
@@ -22,7 +23,7 @@ class YModemAPi: NSObject, YmodemRequestApi{
         let filepath = params.filepath
         let status = params.status
         //let start = params.start
-        let stop = params.stop
+        let stop = params.stop ?? false
         let operate = params.operate
         
         if status != nil {
@@ -31,10 +32,10 @@ class YModemAPi: NSObject, YmodemRequestApi{
                 if stop {
                     self.operateManager.stopOta{
                         args in
-                        result.current = args["current"]
-                        result.total = args["total"]
-                        result.data = args["data"]
-                        result.msg = args["msg"]
+                        result.current = args["current"] as? Int32
+                        result.total = args["total"] as? Int32
+                        result.data = args["data"] as? [Any?]
+                        result.msg = args["msg"] as? String
                     }
                 }
             }
@@ -45,14 +46,14 @@ class YModemAPi: NSObject, YmodemRequestApi{
             
             if status == "otaStart" {
                 if filename != nil && filepath != nil && operate != nil {
-                    self.operateManager.updateOta(fileNames: filename, filePaths: filepath, otaState: operate){
+                    self.operateManager.updateOta(fileNames: filename!, filePaths: filepath!, otaState: operate!){
                         args in
                         if operate == OTAC || operate == OTASTART || operate == OTAACK || operate == OTANAK{
                             
-                            result.current = args["current"]
-                            result.total = args["total"]
-                            result.data = args["data"]
-                            result.msg = args["msg"]
+                            result.current = args["current"] as? Int32
+                            result.total = args["total"] as? Int32
+                            result.data = args["data"] as? [Any?]
+                            result.msg = args["msg"] as? String
                             
                         }
                     }

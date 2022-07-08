@@ -154,6 +154,10 @@ receiveData(BuildContext context,BleModel model,BluetoothCharacteristic characte
   }
 
 ```
+#### update July 8 2022
+
+1. modify iOS params error
+
 
 #### update July 7 2022
 
